@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet"> 
+<meta charset="utf-8" />
+<title>Age Calculator</title>
+</head>
+<body>
+
+
+<style>
+body {
+  background-image: url('../images/cake.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+h1 {
+  font-family: 'Acme', sans-serif;
+}
+</style>
+
+
+<script>
+
+//document.body.style.backgroundImage = "url('../images/cake.jpg')";
+//document.getElementById("myDiv").style.backgroundImage = "url('images/cake.jpg')";  
+
+
+let birthYear = prompt("Enter Your Birth Year");
+let birthMonth = prompt("Enter Your Birth Month (As A Number)");
+let birthDay = prompt("Enter Your Birth Day");
+let date = new Date();
+let currentYear = date.getFullYear();
+let currentMonth = date.getMonth() + 1;
+let currentDay = date.getDate();
+let yearAge = currentYear - birthYear;
+let monthAge = currentMonth - birthMonth;
+let dayAge = currentDay - birthDay;
+let monthPluralizer = "";
+let dayPluralizer = "";
+
+if (monthAge === 1) {
+  monthPluralizer = "Month";
+} else {
+  monthPluralizer = "Months";
+}
+
+if (dayAge === 1) {
+  dayPluralizer = "Day";
+} else {
+  dayPluralizer = "Days";
+}
+
+if (currentMonth < birthMonth) {
+  monthAge = monthAge + 12;
+  yearAge = yearAge - 1;
+}
+
+if (currentDay < birthDay) {
+  monthAge = monthAge - 1;
+  if (currentMonth === 1 || 3 || 5 || 7 || 8 || 10 || 12) {
+    dayAge = dayAge + 31;
+  } else if (currentMonth === 4 || 6 || 9 || 11) {
+    dayAge = dayAge + 30;
+  } else if (currentMonth === 2) {
+    dayAge = dayAge + 28;
+  }
+}
+
+if (currentMonth == birthMonth && currentDay < birthDay) {
+  monthAge = monthAge + 12;
+  yearAge = yearAge - 1;
+}
+
+
+document.write("<h1><p>Your Birth Date Is " + birthMonth + "/" + birthDay + "/" + birthYear + "</p></h1><br>");
+document.write("<h1><p>Today's Date Is " + currentMonth + "/" + currentDay + "/" + currentYear + "</p></h1><br>");
+document.write("<h1><p>You Are " + yearAge + " Years, " + monthAge + " " + monthPluralizer + " & " + dayAge +
+  " " + dayPluralizer + " Old.</p></h1><br>");
+if (birthMonth == 0 && birthDay == 0 && birthYear == 0 ) {
+  document.write("<h1><p>Hello Jesus!<p></h1>")
+} else if (birthMonth === null && birthDay === null && birthYear === null ) {
+  document.write("<h1><p>Hello Jesus!<p></h1>")
+}
+
+
+
+
+
+</script>
+
+</body>
+</html>

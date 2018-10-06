@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
+  <title>JavaScript To Do List</title>
+</head>
+
+
+<body id="home">
+  <button id="push" onclick="pushPrompt()">Add something to the end of your list</button>
+  <button id="shift" onclick="shiftIt()">Remove the first item from your list</button>
+
+
+
+<p id="listPlace">
+<!--Here's where the magic happens-->
+</p>
+
+  <script type="text/javascript">
+
+    let toDoList = ["sample item 1", "sample item 2", "sample item 3"];
+    let addItem = "";
+
+    toDoList.pushAndUpdate = function(item) {
+      //push the item into the array using the prototype push method.
+      Array.prototype.push.call(this, item);
+      //update the html of my element.
+      document.getElementById("listPlace").innerHTML = this.join("<br>");
+    }
+
+    toDoList.shiftAndUpdate = function(item) {
+      //shift the item out of the array using the prototype push method.
+      Array.prototype.shift.call(this, item);
+      //update the html of my element.
+      document.getElementById("listPlace").innerHTML = this.join("<br>");
+    }
+
+    document.getElementById("listPlace").innerHTML = toDoList.join("<br>");
+    //arrow function for the prompt variable, then the push, adds prompt to array in toDoList
+    const pushPrompt = () => {
+      addItem = prompt("What is the item you want to add to your list?", "Sample item");
+      toDoList.pushAndUpdate(addItem);
+    }
+    //arrow function for the shift removal of first array item from toDoList
+    const shiftIt = () => toDoList.shiftAndUpdate();
+
+  </script>
+
+  <style media="screen">
+
+    #push {
+      background-color: rgba(1, 126, 38, 0.404);
+      color: white;
+      margin-left: 8%;
+      width: 33%;
+      height: 40px;
+    }
+
+    #shift {
+      background-color: rgba(221, 20, 20, 0.562);
+      color: white;
+      margin-left: 8%;
+      width: 33%;
+      height: 40px;
+    }
+
+    #listPlace {
+        font-size: 33px;
+        background-color: rgba(255, 166, 0, 0.15);
+        padding: 12px;
+        margin-left: 20%;
+        width: 50%;
+    }
+
+    body {
+        background-image: url('../images/work.jpg');
+        background-size: 100%;
+    }
+
+    html {
+      font-family: 'Indie Flower', cursive;
+    }
+  </style>
+</body>
+
+</html>

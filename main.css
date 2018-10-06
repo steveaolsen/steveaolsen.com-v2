@@ -1,0 +1,406 @@
+/*============================================================
+GLOBALS
+============================================================*/
+
+html {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: white;
+}
+
+nav {
+  position: fixed;
+  border: 2px solid black;
+  width: 100%;
+}
+
+nav li {
+  display: flex;
+  justify-content: center;
+  float: left;
+  width: 20%;
+}
+
+nav li a {
+  display: block;
+  color: black;
+  width: 144%;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: orange;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*============================================================
+home
+============================================================*/
+
+body {
+  background-image: url(/images/tree.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}
+
+#homeContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.box {
+  border: 2px solid black;
+  background-color: rgba(0, 0, 139, 0.05);
+  width: 50%;
+  justify-content: center;
+  margin-bottom: 5%;
+  padding: 5%;
+}
+
+.boxLogo {
+  border: 2px solid black;
+  background-color: rgba(0, 0, 139, 0.05);
+  width: 50%;
+  justify-content: center;
+  margin-bottom: 5%;
+  padding: 7%;
+}
+
+
+/*============================================================
+jQuery
+============================================================*/
+
+#indexTitle {
+  display: flex;
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+#picOfMeContainer {
+  display: flex;
+  align-items: center;
+  width: 48%;
+  margin-left: 25%;
+}
+
+#picOfMe img {
+  width: 104%;
+  align-self: center;
+}
+
+#indexContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+/*index buttons*/
+
+#show1 {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: center;
+  background-color: #333;
+  border: 2px solid black;
+  color: white;
+  box-shadow: 3px 3px 3px #888888;
+  width: 17%;
+  height: 4%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 15px;
+}
+
+#show1:hover {
+  color: black;
+  background-color: #f8f8ff;
+}
+
+#show1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#show1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#show1:hover span {
+  padding-right: 25px;
+}
+
+#show1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#show2 {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: center;
+  background-color: #333;
+  border: 2px solid black;
+  color: white;
+  box-shadow: 3px 3px 3px #888888;
+  width: 17%;
+  height: 4%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 15px;
+}
+
+#show2:hover {
+  color: black;
+  background-color: #f8f8ff;
+}
+
+#show2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#show2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#show2:hover span {
+  padding-right: 25px;
+}
+
+#show2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#show3 {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: center;
+  background-color: #333;
+  border: 2px solid black;
+  color: white;
+  box-shadow: 3px 3px 3px #888888;
+  width: 17%;
+  height: 4%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 15px;
+}
+
+#show3:hover {
+  color: black;
+  background-color: #f8f8ff;
+}
+
+#show3 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#show3 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#show3:hover span {
+  padding-right: 25px;
+}
+
+#show3:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*first box*/
+
+#index1Box {
+  align-self: center;
+  color: black;
+  height: 250px;
+  width: 48%;
+  background-image: url(images/tim-arterbury-267949.jpg);
+  background-size: contain;
+  border: 2px solid black;
+  padding: 20px 12px;
+}
+
+#index1List {
+  background-color: rgba(227, 227, 227, 0.65);
+}
+
+#logoBox {
+  display: flex;
+  background-color: white;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+#htmlCSSLogo img {
+  height: 80px;
+  width: 100px;
+}
+
+#jsLogo img {
+  height: 70px;
+  width: 70px;
+}
+
+#jqLogo img {
+  height: 70px;
+  width: 70px;
+}
+
+#cSharpLogo img {
+  height: 70px;
+  width: 70px;
+}
+
+/*second box*/
+
+#index2Box {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  height: 250px;
+  width: 48%;
+  background-image: url(images/pavan-trikutam-1660.jpg);
+  background-size: contain;
+  border: 2px solid black;
+  padding: 20px 10px 10px 10px;
+  color: white;
+}
+
+#index2List {
+  background-color: rgba(0, 0, 0, 0.25)
+}
+
+/*third box*/
+
+#index3Box {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  height: 250px;
+  width: 48%;
+  background-image: url(images/harshal-s-hirve-44495.jpg);
+  background-size: contain;
+  border: 2px solid black;
+  padding: 20px 10px 10px 10px;
+  color: white;
+}
+
+#index3Box img {
+  align-self: center;
+  border: 2px solid black;
+  height: 95%;
+  width: 95%;
+}
+
+#Index3Box p {
+  align-self: center;
+  background-color: rgba(0, 147, 255, 0.51);
+}
+
+/*============================================================
+contact
+============================================================*/
+
+#contactMeContainer {
+  background-image: url(images/cliff.jpg);
+  background-size: cover;
+  padding: 33px 0px 33px 0px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#callMeEmailMe {
+  display: flex;
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+#contactMeForm {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 20px;
+  border: 3px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  /* Make padding and width stay in place */
+  margin-top: 6px;
+  margin-bottom: 16px;
+  margin-left: 10px;
+  resize: vertical;
+  background-color: #fff7e6;
+}
+
+input[type=submit] {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: center;
+  background-color: #333;
+  border: 2px solid black;
+  color: white;
+  width: 100%;
+  height: auto;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 15px;
+  font-size: 45px;
+}
+
+input[type=submit]:hover {
+  color: black;
+  background-color: #f8f8ff;
+}

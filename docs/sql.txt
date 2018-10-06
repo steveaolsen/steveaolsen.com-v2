@@ -1,0 +1,126 @@
+/*create the 2 tables*/
+
+create table Person
+
+(
+
+PersonId int,
+
+LastName varchar(255),
+
+FirstName varchar(255),
+
+PersonStatusId int
+
+);
+
+
+
+create table PersonStatus
+
+(
+
+PersonStatusId int,
+
+StatusDescription varchar(255)
+
+);
+
+/*insert status id and descriptions*/
+
+INSERT INTO PersonStatus (PersonStatusID, StatusDescription)
+VALUES (1, 'Alive'), (2, 'Dead'), (3, 'Zombie'), (4, 'Unknown');
+
+/*insert the people and their statuses*/
+
+INSERT INTO Person (PersonID, LastName, FirstName, PersonStatusID)
+
+VALUES 
+
+(1, 'Macdonald', 'Norm', 1),
+
+(2, 'Maniscalco', 'Sebastian', 2),
+
+(3, 'Peterson', 'Jordan', 3),
+
+(4, 'Rogan', 'Joe', 4);
+
+/*select all people*/
+
+Select * from Person
+
+/*update person to zombie*/
+
+UPDATE Person
+
+SET personstatusId = 4
+
+WHERE LastName = 'Saba'; 
+
+/*delete a dead person*/
+
+DELETE FROM person
+
+WHERE personstatusID = 2;
+
+/*select all unkown status people*/
+
+select * from person
+
+where personstatusid = 4;
+
+/*select all unknown or alive people*/
+
+select * from person
+
+where personstatusid = 4 
+
+or 
+personstatusid = 1;
+
+/*select all named tom who are alive*/
+
+select * 
+from person
+
+where FirstName = 'Tom' and personstatusid = 1;
+
+/*select all people based on status, inner join, using alias*/
+
+select s.PersonStatusID, s.statusdescription, p.lastname, 
+p.firstname
+from personstatus s
+
+inner join person p
+
+on s.personstatusid = p.personstatusid;
+
+/*left outer joingbased on status, returns nulls for missing statuses*/
+
+select s.PersonStatusID, s.statusdescription, p.lastname, p.firstname
+
+from personstatus s
+
+left outer join person p
+
+on s.personstatusid = p.personstatusid;
+
+/*select all statuses joined w people*/
+
+select s.PersonStatusID, s.statusdescription, p.lastname, 
+p.firstname
+from personstatus s
+
+inner join person p
+
+on s.personstatusid = p.personstatusid;
+
+/*all people and stauts*/
+
+select s.PersonStatusID, s.statusdescription, p.lastname, 
+p.firstname
+from personstatus s
+
+left join person p
+
+on s.personstatusid = p.personstatusid;

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <script src="../JavaScript.js"></script>
+  <link rel="stylesheet" href="../main.css" media="screen" />
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded" rel="stylesheet"> 
+</head>
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="../home.html">Home</a></li>
+      <li><a href="../pages/contact.html">Contact</a></li>
+      <li><a href="../docs/2018.10 STEVEOLSEN.pdf" target="new">My Resume</a></li>
+      <li><a href="https://github.com/steveaolsen" target="new">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/steveaolsen/" target="new">LinkedIn</a></li>
+    </ul>
+</nav>
+</header>
+
+<body>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <div id="contactMeContainer">
+    <div id="callMeEmailMe">
+            <p>steveaolsen@gmail.com</p>
+            <h1> // </h1>
+            <p>615-922-9480</p>
+    </div>
+    <div id="contactMeForm">
+      <form method="post" action="send_form_email.php">
+        <table width="100%">
+          <tr>
+            <td valign="top"><label for="first_name">
+            <h2>First Name (*)</h2>
+            </label></td>
+            <td valign="top"><input type="text" name="first_name" maxlength="50" size="30"></td>
+          </tr>
+          <tr>
+            <td valign="top"><label for="last_name">
+            <h2>Last Name (*)</h2>
+            </label></td>
+            <td valign="top"><input type="text" name="last_name" maxlength="50" size="30"></td>
+          </tr>
+          <tr>
+            <td valign="top"><label for="email">
+            <h2>Email (*)</h2>
+            </label></td>
+            <td valign="top"><input type="text" name="email" maxlength="80" size="30"></td>
+          </tr>
+          <tr>
+            <td valign="top"><label for="telephone">
+            <h2>Phone</h2>
+            </label></td>
+            <td valign="top"><input type="text" name="telephone" maxlength="30" size="30"></td>
+          </tr>
+          <tr>
+            <td valign="top"><label for="comments">
+            <h2>Comments (*)</h2>
+            </label></td>
+            <td valign="top"><textarea name="comments" maxlength="1000" cols="25" rows="6"></textarea></td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align:center"><input type="submit" value="Send"></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <!--contactMeForm-->
+  </div>
+  <!--contactMeContainer-->
+</body>
+<footer>
+
+</footer>
+
+</html>

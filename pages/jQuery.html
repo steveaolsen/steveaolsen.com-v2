@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="../main.css" media="screen" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="../main.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded" rel="stylesheet"> 
+</head>
+
+<header>
+  <nav>
+    
+  </nav>
+</header>
+
+<body>
+    
+
+  <div id="indexTitle">
+    <h1>jQuery Example</h1>
+    <br>
+    <p>
+      Click on the boxes and watch the hidden elements become visable. You'll also see the screen move to
+      the box you select.
+    </p>
+  </div>
+
+
+  <div id="indexContainer">
+    <div id="show1" onmousedown="autoScrollTo('indexLeftBox');"> <span>Development</span> </div>
+    <div id="index1Box">
+      <div id="index1List">
+        <ul>
+          <h2>
+          <li>HTML & CSS</li>
+          <li>JavaScript</li>
+		      <li>jQuery</li>
+          <li>C#</li>
+        </h2>
+        </ul>
+        <div id="logoBox">
+          <div id="htmlCSSLogo"> <img src="../images/htmlcss.svg"> </div>
+          <div id="jsLogo"> <img src="../images/js.png"> </div>
+          <div id="jqLogo"> <img src="../images/jq.gif"> </div>
+          <div id="cSharpLogo"> <img src="../images/cSharp.jif"> </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="show2" onmousedown="autoScrollTo('indexMiddleBox');"> <span>Marketing</span> </div>
+    <div id="index2Box">
+      <div id="index2List">
+        <ul>
+          <h2>
+          <li>Email Marketing / Direct Marketing</li>
+          <li>SalesForce Management & Development</li>
+          <li>Desktop & Print Publishing</li>
+          <li>Hustle</li>
+        </h2>
+        </ul>
+      </div>
+    </div>
+
+    <div id="show3" onmousedown="autoScrollTo('sigPic');"> <span>Personality</span> </div>
+    <div id="index3Box">
+      <img src="../images/sig.jpg">
+    </div>
+  </div>
+  </body>
+    <footer>
+
+
+    </footer>
+
+</html>
