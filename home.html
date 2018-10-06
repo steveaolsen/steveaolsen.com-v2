@@ -15,39 +15,40 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
-        <header>
-            <nav>
-              <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="pages/contact.html">Contact</a></li>
-                <li><a href="docs/2018.10 STEVEOLSEN.pdf" target="new">My Resume</a></li>
-                <li><a href="https://github.com/steveaolsen" target="new">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/steveaolsen/" target="new">LinkedIn</a></li>
-              </ul>
-            </nav>
-          </header>
     </head>
+
+    <header>
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+            <li><a href="docs/2018.10 STEVEOLSEN.pdf" target="new">My Resume</a></li>
+            <li><a href="pages/resources.html">Resources</a></li>
+            <li><a href="https://github.com/steveaolsen" target="new">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/steveaolsen/" target="new">LinkedIn</a></li>
+          </ul>
+        </nav>
+    </header>
       
       
-    <body>
+    <body id="homeBody">
       <br><br><br><br><br>
       <div id="homeContainer">
         
-        <h1>Welcome</h1>
+        <h1>Hi!</h1>
         <div class="box">
           <p>
             Welcome to my web site.
             <br><br>
             My name is Steve Olsen and I am a freelance Web Developer for hire. You can reach me at:
-            <br><br>
-            615-922-9480
             <br>
-            steveaolsen@gmail.com
+            - 615-922-9480
+            <br>
+            - steveaolsen@gmail.com
             <br><br>
             I live in the Metro Detroit area and am proud to be part of the rebirth of this great city.
             <br><br>
-            Please check out my Portfolio and Resume. Here is a list of my skills and work, but keep in
-            mind that I am always learning more.
+            Please check out my Portfolio and Resume.
             <br><br>
             Thanks for stopping by!
             <br><br>
@@ -58,21 +59,21 @@
 
         <h1>Skills</h1>
         <div class="boxLogo">
-          <img src="images/html.png" alt="HTML" height="100" width="100">
-          <img src="images/css.png" alt="CSS" height="100" width="100">
-          <img src="images/js.png" alt="JavaScript" height="100" width="100">
-          <img src="images/jq.gif" alt="jQuery" height="100" width="100">
-          <img src="images/json.png" alt="JSON" height="100" width="100">
-          <img src="images/vscode.png" alt="VSCode" height="100" width="100">
-          <img src="images/atom.png" alt="Atom" height="100" width="100">
-          <img src="images/bootstrap.png" alt="Bootstrap" height="100" width="100">
-          <img src="images/cSharp.jif" alt="CSharp" height="100" width="100">
-          <img src="images/dotnet.png" alt="DotNet" height="100" width="100">
-          <img src="images/php.png" alt="PHP" height="100" width="100">
-          <img src="images/sql.png" alt="SQL" height="100" width="100">
-          <img src="images/tableau.gif" alt="Tableau" height="100" width="100">
-          <img src="images/mysql.png" alt="MySQL" height="100" width="100">
-          <img src="images/angular.png" alt="Angular" height="100" width="100">
+          <img src="images/html.png" alt="HTML" height="100" width="100" class="skillImg">
+          <img src="images/css.png" alt="CSS" height="100" width="100" class="skillImg">
+          <img src="images/js2.png" alt="JavaScript" height="auto" width="100" class="skillImg">
+          <img src="images/jq.gif" alt="jQuery" height="100" width="100" class="skillImg">
+          <img src="images/json.png" alt="JSON" height="100" width="100" class="skillImg">
+          <img src="images/vscode.png" alt="VSCode" height="100" width="100" class="skillImg">
+          <img src="images/atom.png" alt="Atom" height="100" width="100" class="skillImg">
+          <img src="images/bootstrap.png" alt="Bootstrap" height="100" width="100" class="skillImg">
+          <img src="images/csharp.png" alt="CSharp" height="100" width="100" class="skillImg">
+          <img src="images/dotnet.png" alt="DotNet" height="100" width="100" class="skillImg">
+          <img src="images/php.png" alt="PHP" height="100" width="100" class="skillImg">
+          <img src="images/sql.png" alt="SQL" height="100" width="100" class="skillImg">
+          <img src="images/tableau.gif" alt="Tableau" height="100" width="100" class="skillImg">
+          <img src="images/mysql.png" alt="MySQL" height="100" width="100" class="skillImg">
+          <img src="images/angular.png" alt="Angular" height="100" width="100" class="skillImg">
         </div>
 
         <h1>Portfolio</h1>
@@ -116,7 +117,7 @@
           </p>
         </div>
         <div class="box">
-          <h2>jQuery Animations</h2>
+          <h2>jQuery</h2>
           <p>Animations can really set your web site apart from the others. jQuery is the most widely used JavaScript
             library and is great for animations amongst other things. JavaScript libraries are sections of prewritten
             code that can be called with simplified commands. John Resig created jQuery in 2006 and it is still heavily
@@ -165,13 +166,27 @@
           </p>
         </div>
         <div class="box">
-          <h2>C# & DotNet Framework/ fitness APP / Zombie stuff</h2>
-          <p>
-
+          <h2>C# & .NET</h2>
+          <p>C# is a powerful programming language adapted by Microsoft from the C programming language. It was
+            developed around 2000 within Microsoft's .NET Framework. C# is a true object oriented programming language
+            and uses methods, loops, variables, objects, etc. My C# and .NET experience is more limited than my JavaScript
+            experience, but here is a quick demo project I've built to demonstrate my understanding of the language.
+            <br><br>
+            The following program is a fitness app that runs in the terminal of any .NET compatible software. It prompts the 
+            user for workout information, error checks data, and responds to the user based on the level of activity. The 
+            program will track your activity until you exit. 
+            <br><br>
+            To run FitnessFrog you can download both files and place them in the same folder. Download an IDE (I recommend
+            Visaul Studio Code from Microsoft) and open the folder in the IDE. Right click the folder and select
+            "Open in Terminal". After that just type "dotnet run" in the terminal and press enter. Have fun and happy sweating.
+            <br><br>
+            <a href="docs/Program.cs" target="new">Program.cs</a>
+            <br>
+            <a href="docs/FitnessFrog.csproj" target="new">FitnessFrog.csproj</a>
           </p>
         </div>
         <div class="box">
-          <h2>Other Work I've Done, fix php form</h2>
+          <h2>Other Things I Can Do</h2>
               <p>
                 <ul>
                     <li>DOM Modification</li>
