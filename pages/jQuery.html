@@ -4,11 +4,300 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Home</title>
-  <link rel="stylesheet" href="../main.css" media="screen" />
+  <title>jQuery Animation</title>
+  <style>
+
+    h1 {
+      margin: 25px;
+    }
+  
+    p {
+      margin: 25px;
+    }
+
+    #indexTitle {
+      display: flex;
+      font-size: 25px;
+      align-items: center;
+      justify-content: center;
+      padding: 5%;
+    }
+
+    #indexContainer {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /*index buttons*/
+
+    #show1 {
+      display: flex;
+      flex-direction: row;
+      align-self: center;
+      justify-content: center;
+      background-color: #333;
+      border: 2px solid black;
+      color: white;
+      box-shadow: 3px 3px 3px #888888;
+      width: 17%;
+      height: 4%;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 15px;
+    }
+
+    #show1:hover {
+      color: black;
+      background-color: #f8f8ff;
+    }
+
+    #show1 span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    #show1 span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    #show1:hover span {
+      padding-right: 25px;
+    }
+
+    #show1:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+
+    #show2 {
+      display: flex;
+      flex-direction: row;
+      align-self: center;
+      justify-content: center;
+      background-color: #333;
+      border: 2px solid black;
+      color: white;
+      box-shadow: 3px 3px 3px #888888;
+      width: 17%;
+      height: 4%;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 15px;
+    }
+
+    #show2:hover {
+      color: black;
+      background-color: #f8f8ff;
+    }
+
+    #show2 span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    #show2 span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    #show2:hover span {
+      padding-right: 25px;
+    }
+
+    #show2:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+
+    #show3 {
+      display: flex;
+      flex-direction: row;
+      align-self: center;
+      justify-content: center;
+      background-color: #333;
+      border: 2px solid black;
+      color: white;
+      box-shadow: 3px 3px 3px #888888;
+      width: 17%;
+      height: 4%;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 15px;
+    }
+
+    #show3:hover {
+      color: black;
+      background-color: #f8f8ff;
+    }
+
+    #show3 span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    #show3 span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    #show3:hover span {
+      padding-right: 25px;
+    }
+
+    #show3:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+
+    /*first box*/
+
+    #index1Box {
+      align-self: center;
+      color: black;
+      height: 250px;
+      width: 48%;
+      background-image: url(../images/tim-arterbury-267949.jpg);
+      background-size: contain;
+      border: 2px solid black;
+      padding: 20px 12px;
+    }
+
+    #index1List {
+      background-color: rgba(227, 227, 227, 0.65);
+    }
+
+    #logoBox {
+      display: flex;
+      background-color: white;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    #htmlCSSLogo img {
+      height: 80px;
+      width: 100px;
+    }
+
+    #jsLogo img {
+      height: 70px;
+      width: 70px;
+    }
+
+    #jqLogo img {
+      height: 70px;
+      width: 70px;
+    }
+
+    #cSharpLogo img {
+      height: 70px;
+      width: 70px;
+    }
+
+    /*second box*/
+
+    #index2Box {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      height: 250px;
+      width: 48%;
+      background-image: url(../images/pavan-trikutam-1660.jpg);
+      background-size: contain;
+      border: 2px solid black;
+      padding: 20px 10px 10px 10px;
+      color: white;
+    }
+
+    #index2List {
+      background-color: rgba(0, 0, 0, 0.25)
+    }
+
+    /*third box*/
+
+    #index3Box {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      height: 250px;
+      width: 48%;
+      background-image: url(../images/harshal-s-hirve-44495.jpg);
+      background-size: contain;
+      border: 2px solid black;
+      padding: 20px 10px 10px 10px;
+      color: white;
+    }
+
+    #index3Box img {
+      align-self: center;
+      border: 2px solid black;
+      height: 95%;
+      width: 95%;
+    }
+
+    #Index3Box p {
+      align-self: center;
+      background-color: rgba(0, 147, 255, 0.51);
+    }
+  
+  </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="../main.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded" rel="stylesheet"> 
+  <script>
+          $(document).ready(function() {
+
+
+          $("#index1Box").hide();
+          $("#index2Box").hide();
+          $("#index3Box").hide();
+
+
+          $('[id*="show1"]').click(function(e) {
+            e.preventDefault();
+            $(this).next('div').fadeIn();
+            $('body, html').animate({
+              scrollTop: $(this).offset().top - $('#indexTitle').height()
+            }, 500)
+          });
+
+          $('[id*="show2"]').click(function(e) {
+            e.preventDefault();
+            $(this).next('div').fadeIn();
+            $('body, html').animate({
+              scrollTop: $(this).offset().top - $('#indexTitle').height()
+            }, 500)
+          });
+
+          $('[id*="show3"]').click(function(e) {
+            e.preventDefault();
+            $(this).next('div').fadeIn();
+            $('body, html').animate({
+              scrollTop: $(this).offset().top - $('#indexTitle').height()
+            }, 500)
+          });
+
+
+          });
+  </script>
+  
 </head>
 
 <header>
@@ -24,8 +313,9 @@
     <h1>jQuery Example</h1>
     <br>
     <p>
-      Click on the boxes and watch the hidden elements become visable. You'll also see the screen move to
-      the box you select.
+      Click on the boxes and watch the hidden elements become visable. 
+      <br>
+      You'll also see the screen move to the box you select.
     </p>
   </div>
 

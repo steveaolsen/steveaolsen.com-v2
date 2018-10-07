@@ -1,13 +1,17 @@
+
+
+
 <?php
 if(isset($_POST['email'])) {
  
-    
+    //IMPORTANT!!!don't forget the form only works on a server with php, 
+    //it wont run on the conputer
     $email_to = "steveaolsen@gmail.com";
     $email_subject = "Contact from steveaolsen.com";
  
     function died($error) {
         // your error code can go here
-        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+        echo "Sorry, but there were error(s) found with the form you submitted. ";
         echo "These errors appear below.<br /><br />";
         echo $error."<br /><br />";
         echo "Please go back and fix these errors.<br /><br />";
@@ -21,7 +25,7 @@ if(isset($_POST['email'])) {
         !isset($_POST['email']) ||
         !isset($_POST['telephone']) ||
         !isset($_POST['comments'])) {
-        died('We are sorry, but there appears to be a problem with the form you submitted.');       
+        died('Sorry, but there appears to be a problem with the form you submitted.');       
     }
  
      
@@ -79,14 +83,12 @@ $headers = 'From: '.$email_from."\r\n".
 'X-Mailer: PHP/' . phpversion();
 @mail($email_to, $email_subject, $email_message, $headers);  
 ?>
- 
 
- 
 Thank you for contacting me. I will be in touch with you very soon.
 
 <a href="../home.html">Back to the Homepage</a>
  
-<?php
+//<?php
  
 }
 ?>

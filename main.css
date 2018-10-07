@@ -41,16 +41,17 @@ nav ul {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/*============================================================
-home
-============================================================*/
-
-#homeBody {  
+body {  
   background-image: url(images/efe-kurnaz-315384-unsplash.jpg);
   background-repeat: no-repeat;
   background-position: center; 
-  background-size: cover;
+  background-size: 100%;
+  background-attachment: fixed;
 }
+
+/*============================================================
+home
+============================================================*/
 
 #homeContainer {
   width: 100%;
@@ -88,13 +89,6 @@ home
 resources
 ============================================================*/
 
-#resourcesBody {  
-  background-image: url(images/efe-kurnaz-315384-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-position: center; 
-  background-size: cover;
-}
-
 #resourcesContainer {
   width: 100%;
   display: flex;
@@ -116,277 +110,16 @@ resources
 }
 
 /*============================================================
-jQuery
-============================================================*/
-
-#indexTitle {
-  display: flex;
-  font-size: 25px;
-  align-items: center;
-  justify-content: center;
-  padding-top: 5%;
-}
-
-#picOfMeContainer {
-  display: flex;
-  align-items: center;
-  width: 48%;
-  margin-left: 25%;
-}
-
-#picOfMe img {
-  width: 104%;
-  align-self: center;
-}
-
-#indexContainer {
-  display: flex;
-  flex-direction: column;
-}
-
-/*index buttons*/
-
-#show1 {
-  display: flex;
-  flex-direction: row;
-  align-self: center;
-  justify-content: center;
-  background-color: #333;
-  border: 2px solid black;
-  color: white;
-  box-shadow: 3px 3px 3px #888888;
-  width: 17%;
-  height: 4%;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 15px;
-}
-
-#show1:hover {
-  color: black;
-  background-color: #f8f8ff;
-}
-
-#show1 span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-#show1 span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-#show1:hover span {
-  padding-right: 25px;
-}
-
-#show1:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-#show2 {
-  display: flex;
-  flex-direction: row;
-  align-self: center;
-  justify-content: center;
-  background-color: #333;
-  border: 2px solid black;
-  color: white;
-  box-shadow: 3px 3px 3px #888888;
-  width: 17%;
-  height: 4%;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 15px;
-}
-
-#show2:hover {
-  color: black;
-  background-color: #f8f8ff;
-}
-
-#show2 span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-#show2 span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-#show2:hover span {
-  padding-right: 25px;
-}
-
-#show2:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-#show3 {
-  display: flex;
-  flex-direction: row;
-  align-self: center;
-  justify-content: center;
-  background-color: #333;
-  border: 2px solid black;
-  color: white;
-  box-shadow: 3px 3px 3px #888888;
-  width: 17%;
-  height: 4%;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 15px;
-}
-
-#show3:hover {
-  color: black;
-  background-color: #f8f8ff;
-}
-
-#show3 span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-#show3 span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-#show3:hover span {
-  padding-right: 25px;
-}
-
-#show3:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-/*first box*/
-
-#index1Box {
-  align-self: center;
-  color: black;
-  height: 250px;
-  width: 48%;
-  background-image: url(images/tim-arterbury-267949.jpg);
-  background-size: contain;
-  border: 2px solid black;
-  padding: 20px 12px;
-}
-
-#index1List {
-  background-color: rgba(227, 227, 227, 0.65);
-}
-
-#logoBox {
-  display: flex;
-  background-color: white;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 12px;
-}
-
-#htmlCSSLogo img {
-  height: 80px;
-  width: 100px;
-}
-
-#jsLogo img {
-  height: 70px;
-  width: 70px;
-}
-
-#jqLogo img {
-  height: 70px;
-  width: 70px;
-}
-
-#cSharpLogo img {
-  height: 70px;
-  width: 70px;
-}
-
-/*second box*/
-
-#index2Box {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  height: 250px;
-  width: 48%;
-  background-image: url(images/pavan-trikutam-1660.jpg);
-  background-size: contain;
-  border: 2px solid black;
-  padding: 20px 10px 10px 10px;
-  color: white;
-}
-
-#index2List {
-  background-color: rgba(0, 0, 0, 0.25)
-}
-
-/*third box*/
-
-#index3Box {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  height: 250px;
-  width: 48%;
-  background-image: url(images/harshal-s-hirve-44495.jpg);
-  background-size: contain;
-  border: 2px solid black;
-  padding: 20px 10px 10px 10px;
-  color: white;
-}
-
-#index3Box img {
-  align-self: center;
-  border: 2px solid black;
-  height: 95%;
-  width: 95%;
-}
-
-#Index3Box p {
-  align-self: center;
-  background-color: rgba(0, 147, 255, 0.51);
-}
-
-/*============================================================
 contact
 ============================================================*/
 
-#contactMeContainer {
-  background-image: url(images/cliff.jpg);
-  background-size: cover;
-  padding: 33px 0px 33px 0px;
-  color: white;
+#contactContainer {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 #callMeEmailMe {
@@ -394,15 +127,19 @@ contact
   font-size: 25px;
   align-items: center;
   justify-content: center;
-  padding-top: 5%;
+  color: whitesmoke;
 }
 
 #contactMeForm {
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
+  border: 2px solid black;
+  background-color: rgba(8, 8, 8, 0.616);
+  width: 90%;
   justify-content: center;
-  width: 100%;
+  padding: 5%;
+}
+
+#contactMeForm h2 {
+  color: whitesmoke;
 }
 
 input[type=text], select, textarea {
@@ -416,26 +153,24 @@ input[type=text], select, textarea {
   margin-bottom: 16px;
   margin-left: 10px;
   resize: vertical;
-  background-color: #fff7e6;
+  font-size: 15px;
 }
 
 input[type=submit] {
-  display: flex;
-  flex-direction: row;
-  align-self: center;
-  justify-content: center;
   background-color: #333;
+  color: whitesmoke;
   border: 2px solid black;
-  color: white;
-  width: 100%;
+  width: 50%;
   height: auto;
   transition: all 0.5s;
   cursor: pointer;
   margin: 15px;
-  font-size: 45px;
+  font-size: 25px;
 }
-
+/*chage the color of the send button on hover*/
 input[type=submit]:hover {
   color: black;
   background-color: #f8f8ff;
 }
+
+
