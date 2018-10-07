@@ -63,6 +63,28 @@ home
   color: white;
 }
 
+#homeContainer h1 {
+  font-family: 'Rock Salt', cursive;
+}
+
+#homeContainer h2 {
+  font-family: 'Rock Salt', cursive;
+}
+
+#welcomeBox {
+  font-size: 25px;
+  font-family: 'Rock Salt', cursive;
+}
+
+.reallySmall {
+  font-family: 'Rock Salt', cursive;
+  font-size: 15px;
+}
+
+span {
+  color: red;
+}
+
 .box {
   border: 2px solid black;
   background-color: rgba(8, 8, 8, 0.616);
@@ -71,9 +93,10 @@ home
   margin-bottom: 5%;
   padding: 5%;
   color: white;
+  opacity:0;/*changes wiht the jQuery code*/
 }
 
-.boxLogo {
+#boxLogo {
   width: 50%;
   justify-content: center;
   margin-bottom: 5%;
@@ -83,6 +106,10 @@ home
 
 .skillImg {
   margin: 2%;
+}
+
+#code {
+  font-family: 'Libre Barcode 128', cursive;
 }
 
 /*============================================================
@@ -109,6 +136,14 @@ resources
   color: white;
 }
 
+#resourcesContainer h1 {
+  font-family: 'Rock Salt', cursive;
+}
+
+#resourcesContainer h2 {
+  font-family: 'Rock Salt', cursive;
+}
+
 /*============================================================
 contact
 ============================================================*/
@@ -120,6 +155,7 @@ contact
   justify-content: center;
   flex-wrap: nowrap;
   align-items: center;
+  font-family: 'Rock Salt', cursive;
 }
 
 #callMeEmailMe {
@@ -127,7 +163,7 @@ contact
   font-size: 25px;
   align-items: center;
   justify-content: center;
-  color: whitesmoke;
+  color: black;
 }
 
 #contactMeForm {
