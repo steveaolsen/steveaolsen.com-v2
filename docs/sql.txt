@@ -55,7 +55,7 @@ UPDATE Person
 
 SET personstatusId = 4
 
-WHERE LastName = 'Saba'; 
+WHERE LastName = 'Maniscalco'; 
 
 /*delete a dead person*/
 
