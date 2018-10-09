@@ -5,6 +5,18 @@ GLOBALS
 html {
   font-family: 'Ubuntu', sans-serif;
   background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+body {  
+  background-image: url(images/efe-kurnaz-315384-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: 100%;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
 }
 
 nav {
@@ -41,14 +53,6 @@ nav ul {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-body {  
-  background-image: url(images/efe-kurnaz-315384-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-position: center; 
-  background-size: 100%;
-  background-attachment: fixed;
-}
-
 /*============================================================
 home
 ============================================================*/
@@ -72,7 +76,7 @@ home
 }
 
 #welcomeBox {
-  font-size: 25px;
+  font-size: 15px;
   font-family: 'Rock Salt', cursive;
 }
 
@@ -159,7 +163,6 @@ contact
 }
 
 #callMeEmailMe {
-  display: flex;
   font-size: 25px;
   align-items: center;
   justify-content: center;
@@ -172,6 +175,7 @@ contact
   width: 90%;
   justify-content: center;
   padding: 5%;
+  margin: 5%;
 }
 
 #contactMeForm h2 {
