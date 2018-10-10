@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>The Office Soundboard</title>
+  <style>
+
+      html {
+        background: url(../images/office.jpg) bottom center;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+
+      .buttons {
+        display: flex;
+        flex: 1;
+        min-height: 100vh;
+        align-items: flex-end;
+        justify-content: center;
+      }
+
+      .button {
+        border: 2px solid black;
+        border-radius: 8px;
+        margin: 10px;
+        font-size: 20px;
+        padding: 16px 8px;
+        transition: all .07s ease;
+        width: 200px;
+        text-align: center;
+        color: white;
+        background: rgba(0,0,0,0.4);
+        text-shadow: 0 0 8px black;
+      }
+
+      .button:active {
+        transform: scale(1.1);
+        border-color: orange;
+        box-shadow: 0 0 16px orange;
+      }
+
+      .playing {
+        transform: scale(1.1);
+        border-color: orange;
+        box-shadow: 0 0 16px orange;
+      }
+
+      kbd {
+        display: block;
+        font-size: 64px;
+      }
+
+      .clip {
+        font-size: 18px;
+        letter-spacing: 2px;
+        color: orange;
+      }
+
+
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <div class="buttons">
+
+    <div data-key="49" class="button" id="no1">
+      <kbd>1</kbd>
+      <span class="clip">Michael</span>
+    </div>
+    <div data-key="50" class="button" id="no2">
+      <kbd>2</kbd>
+      <span class="clip">Dwight</span>
+    </div>
+    <div data-key="51" class="button" id="no3">
+      <kbd>3</kbd>
+      <span class="clip">Jim</span>
+    </div>
+    <div data-key="52" class="button" id="no4">
+      <kbd>4</kbd>
+      <span class="clip">Pam</span>
+    </div>
+    <div data-key="53" class="button" id="no5">
+      <kbd>5</kbd>
+      <span class="clip">Kelly</span>
+    </div>
+    <div data-key="54" class="button" id="no6">
+      <kbd>6</kbd>
+      <span class="clip">Andy</span>
+    </div>
+    <div data-key="55" class="button" id="no7">
+      <kbd>7</kbd>
+      <span class="clip">Stanley</span>
+    </div>
+    <div data-key="56" class="button" id="no8">
+      <kbd>8</kbd>
+      <span class="clip">Kevin</span>
+    </div>
+    <div data-key="57" class="button" id="no9">
+      <kbd>9</kbd>
+      <span class="clip">Darryl</span>
+    </div>
+
+  </div>
+
+  <audio data-key="49" src="sounds/thats.mp3"></audio>
+  <audio data-key="50" src="sounds/deranged.mp3"></audio>
+  <audio data-key="51" src="sounds/miss.mp3"></audio>
+  <audio data-key="52" src="sounds/gamble.mp3"></audio>
+  <audio data-key="53" src="sounds/smack.mp3"></audio>
+  <audio data-key="54" src="sounds/closer.mp3"></audio>
+  <audio data-key="55" src="sounds/gameOn.mp3"></audio>
+  <audio data-key="56" src="sounds/hotdogs.mp3"></audio>
+  <audio data-key="57" src="sounds/phrases.mp3"></audio>
+
+<script>
+
+
+  //removes the transition of the key animation once the even is complete
+  function removeTransition(e) {
+    if (e.propertyName !== 'transform') return;
+    e.target.classList.remove('playing');
+  }
+
+  
+  function playSound(e) {
+    //set audo to the audio element(of the data-key of e.keyCode)
+    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+    //set the key to the div element(of the data-key of e.keyCode)
+    let key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+    // if audio is equal to a zero, null, undefined, false... !x is any falsy value...
+    //then the function stops with return.
+
+    if (!audio) return;
+    //if audio is true, then the code above is ignored and this is run...
+    key.classList.add('playing');
+    audio.currentTime = 0;
+    audio.play();
+  }
+  
+  /////////
+  document.getElementById("no1").onclick = function() {clickPlay1()};
+  function clickPlay1() {
+    let audio = new Audio('sounds/thats.mp3');
+    audio.play();
+  }
+  document.getElementById("no2").onclick = function() {clickPlay2()};
+  function clickPlay2() {
+    let audio = new Audio('sounds/deranged.mp3');
+    audio.play();
+  }
+  document.getElementById("no3").onclick = function() {clickPlay3()};
+  function clickPlay3() {
+    let audio = new Audio('sounds/miss.mp3');
+    audio.play();
+  }
+  document.getElementById("no4").onclick = function() {clickPlay4()};
+  function clickPlay4() {
+    let audio = new Audio('sounds/gamble.mp3');
+    audio.play();
+  }
+  document.getElementById("no5").onclick = function() {clickPlay5()};
+  function clickPlay5() {
+    let audio = new Audio('sounds/smack.mp3');
+    audio.play();
+  }
+  document.getElementById("no6").onclick = function() {clickPlay6()};
+  function clickPlay6() {
+    let audio = new Audio('sounds/closer.mp3');
+    audio.play();
+  }
+  document.getElementById("no7").onclick = function() {clickPlay7()};
+  function clickPlay7() {
+    let audio = new Audio('sounds/gameOn.mp3');
+    audio.play();
+  }
+  document.getElementById("no8").onclick = function() {clickPlay8()};
+  function clickPlay8() {
+    let audio = new Audio('sounds/hotdogs.mp3');
+    audio.play();
+  }
+  document.getElementById("no9").onclick = function() {clickPlay9()};
+  function clickPlay9() {
+    let audio = new Audio('sounds/phrases.mp3');
+    audio.play();
+  }
+
+  ////////////
+
+  const buttons = Array.from(document.querySelectorAll('.button'));
+  buttons.forEach(key => key.addEventListener('transitionend', removeTransition));
+  window.addEventListener('keydown', playSound);
+
+  
+
+</script>
+
+
+</body>
+</html>
