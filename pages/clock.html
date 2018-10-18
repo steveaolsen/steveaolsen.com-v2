@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JavaScript & CSS Clock</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+       
+
+        body {
+            background: url(../images/clocks.jpg);
+            background-repeat: no-repeat;
+            margin: 0px;
+            padding: 5%;
+        }
+
+        #clockBox {
+            z-index: -9;
+            position: relative;
+            width: 500px;
+            height: 500px;
+            margin: auto;
+            border: 5px solid black;
+            border-radius: 100%;
+            background-color: rgba(36, 98, 151, 0.39);
+            box-shadow: 25px 25px 15px black;
+
+        }
+
+        #hourHand {
+            background-color:whitesmoke;
+            border: 1px solid black;
+            width: 220px;
+            height: 24px;
+            transform-origin: 100%;
+            z-index: -5;
+            position: absolute;
+            top: 239px;
+            left: 30px;
+            border-radius: 5%;
+        }
+
+        #minuteHand {
+            background-color:whitesmoke;
+            border: 1px solid black;
+            width: 230px;
+            height: 15px;
+            transform-origin: 100%;
+            z-index: -3;
+            position: absolute;
+            top: 244px;
+            left: 20px;
+            border-radius: 5%;
+        }
+
+        #secondHand {
+            background-color: red;
+            width: 248px;
+            height: 5px;
+            transform-origin: 100%;
+            z-index: -1;
+            position: absolute;
+            top: 248px;
+            left: 3px;
+        }
+
+        #axel {
+            background-color: orange;
+            width: 40px;
+            height: 40px;
+            z-index: -4;
+            position: absolute;
+            left: 230px;
+            top: 230px;
+            border-radius: 100%;
+            border: 1px solid black;
+        }
+
+         #miniAxel {
+            background-color: rgb(21, 255, 0);
+            width: 15px;
+            height: 15px;
+            z-index: -2;
+            position: absolute;
+            left: 242.5px;
+            top: 242.5px;
+            border-radius: 100%;
+            border: 1px solid black;
+        }
+
+        #miniMiniAxel {
+            background-color: rgb(238, 255, 0);
+            width: 5px;
+            height: 5px;
+            z-index: 0;
+            position: absolute;
+            left: 247.5px;
+            top: 247.5px;
+            border-radius: 100%;
+            border: 1px solid black;
+        }
+
+    
+    </style>
+    
+</head>
+<body>
+        <div id="clockBox">
+            <div id="hourHand"></div>
+            <div id="minuteHand"></div>
+            <div id="secondHand"></div>
+            <div id="axel"></div>
+            <div id="miniAxel"></div>
+            <div id="miniMiniAxel"></div>
+        </div>
+</body>
+
+    <script>
+            //Create variables of the hand elements
+            const sHand = document.getElementById("secondHand");
+            const mHand = document.getElementById("minuteHand");
+            const hHand = document.getElementById("hourHand");
+            
+
+           function refresh() {
+
+               const now = new Date();
+
+               const seconds = now.getSeconds();
+               const sDeg = seconds * 6 + 90;
+               sHand.style.transform = `rotate(${sDeg}deg)`;
+
+               const minutes = now.getMinutes();
+               const mDeg = minutes * 6 + 90;
+               mHand.style.transform = `rotate(${mDeg}deg)`;
+
+               const hours = now.getHours();
+               const hDeg = hours * 30 + 90;
+               hHand.style.transform = `rotate(${hDeg}deg)`;
+
+           }
+            
+           setInterval(refresh, 1000);
+           refresh();
+           
+            
+            
+
+    </script>
+</html>
