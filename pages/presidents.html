@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Presidents of the United States of America</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            
+        }
+
+
+        body {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            background: url(../images/president.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+            
+
+        }
+
+        #prezBox {
+            width: 30%;
+            height: 20%;
+            font-family: 'Tangerine', cursive;
+            color: rgb(192, 201, 184);
+        }
+
+        input {
+            color: black;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        
+
+
+    </style>
+    
+</head>
+<body>
+
+    <div id="prezBox">
+        <h1>
+            <strong><span id = "namePlace">Enter a number</span></strong><br>
+            <span id = "termPlace">to see the corresponding</span><br>
+            <span id = "numPlace">President's term information.</span>
+        </h1>
+        <input type="text" id = "numberBox">
+        <input type="submit" value="GO" onclick="numberPasser()">
+
+    </div>
+    
+</body>
+<script>
+        //first:, last:, no:, in:, out:
+        const presidents = [
+            {first: 'George', last: 'Washington', no: '1', in: 1789, out: 1797},
+            {first: 'John', last: 'Adams', no: '2', in: 1797, out: 1801},
+            {first: 'Thomas', last: 'Jefferson', no: '3', in: 1801, out: 1809},
+            {first: 'James', last: 'Madison', no: '4', in: 1809, out: 1817},
+            {first: 'James', last: 'Monroe', no: '5', in: 1817, out: 1825},
+            {first: 'John Quincy', last: 'Adams', no: '6', in: 1825, out: 1829},
+            {first: 'Andrew', last: 'Jackson', no: '7', in: 1829, out: 1837},
+            {first: 'Martin', last: 'Van Buren', no: '8', in: 1837, out: 1841},
+            {first: 'William Henry', last: 'Harrison', no: '9', in: 1841, out: 1841},
+            {first: 'John', last: 'Tyler', no: '10', in: 1841, out: 1845},
+            {first: 'James K.', last: 'Polk', no: '11', in: 1845, out: 1849},
+            {first: 'Zacahry', last: 'Taylor', no: '12', in: 1849, out: 1850},
+            {first: 'Millard', last: 'Fillmore', no: '13', in: 1850, out: 1853},
+            {first: 'Franklin', last: 'Pierce', no: '14', in: 1853, out: 1857},
+            {first: 'James', last: 'Buchanan', no: '15', in: 1857, out: 1861},
+            {first: 'Abraham', last: 'Lincoln', no: '16', in: 1861, out: 1865},
+            {first: 'Andrew', last: 'Johnson', no: '17', in: 1865, out: 1869},
+            {first: 'Ulysses S.', last: 'Grant', no: '18', in: 1869, out: 1877},
+            {first: 'Rutherford B.', last: 'Hayes', no: '19', in: 1877, out: 1881},
+            {first: 'James A.', last: 'Garfield', no: '20', in: 1881, out: 1881},
+            {first: 'Chester A.', last: 'Arthur', no: '21', in: 1881, out: 1885},
+            {first: 'Grover', last: 'Cleveland', no: '22', in: 1885, out: 1889},
+            {first: 'Benjamin', last: 'Harrison', no: '23', in: 1889, out: 1893},
+            {first: 'Grover', last: 'Cleveland', no: '24', in: 1893, out: 1897},
+            {first: 'William', last: 'McKinley', no: '25', in: 1897, out: 1901},
+            {first: 'Theodore', last: 'Roosevelt', no: '26', in: 1901, out: 1909},
+            {first: 'William Howard', last: 'Taft', no: '27', in: 1909, out: 1913},
+            {first: 'Woodrow', last: 'Wilson', no: '28', in: 1913, out: 1921},
+            {first: 'Warren G.', last: 'Harding', no: '29', in: 1921, out: 1923},
+            {first: 'Calvin', last: 'Coolidge', no: '30', in: 1923, out: 1929},
+            {first: 'Herbert', last: 'Hoover', no: '31', in: 1929, out: 1933},
+            {first: 'Franklin D.', last: 'Roosevelt', no: '32', in: 1933, out: 1945},
+            {first: 'Harry S.', last: 'Truman', no: '33', in: 1945, out: 1953},
+            {first: 'Dwight D.', last: 'Esienhower', no: '34', in: 1953, out: 1961},
+            {first: 'John F.', last: 'Kennedy', no: '35', in: 1961, out: 1963},
+            {first: 'Lyndon B.', last: 'Johnson', no: '36', in: 1963, out: 1969},
+            {first: 'Richard', last: 'Nixon', no: '37', in: 1969, out: 1974},
+            {first: 'Gerald', last: 'Ford', no: '38', in: 1974, out: 1977},
+            {first: 'Jimmy', last: 'Carter', no: '39', in: 1977, out: 1981},
+            {first: 'Ronald', last: 'Reagan', no: '40', in: 1981, out: 1989},
+            {first: 'George H. W.', last: 'Bush', no: '41', in: 1989, out: 1993},
+            {first: 'Bill', last: 'Clinton', no: '42', in: 1993, out: 2001},
+            {first: 'George H.', last: 'Bush', no: '43', in: 2001, out: 2009},
+            {first: 'Barack', last: 'Obama', no: '44', in: 2009, out: 2017},
+            {first: 'Donald J.', last: 'Trump', no: '45', in: 2017, out: "Current"}
+        ];
+
+
+        
+        let nameplace = document.getElementById("namePlace");
+        let termplace = document.getElementById("termPlace");
+        let numplace = document.getElementById("numPlace");
+        
+
+        function numberPasser() {
+            let x = document.getElementById("numberBox").value;
+            nameplace.innerHTML = `${presidents[x - 1].first}  ${presidents[x - 1].last}`;
+            termplace.innerHTML = `Term: ${presidents[x - 1].in} - ${presidents[x - 1].out}`;
+            numplace.innerHTML = `President: #${presidents[x - 1].no}`;
+        }
+    </script>
+</html>
