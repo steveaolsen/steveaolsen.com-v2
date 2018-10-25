@@ -1,0 +1,42 @@
+
+
+
+
+body {
+    background-image: url('hello.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+#pageContainer {
+    margin: 40% 5% 5% 40%;
+    font-size: 50px;
+    font-family: 'Permanent Marker', cursive;
+    color: whitesmoke;
+}
+
+#onlyWindow {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.modal-header {
+    background-color: orange;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: center;
+    background-color: orange;
+}
+
+.modal-body input {
+    margin: 3%;
+}
+
+#name {
+    background-color: rgba(0, 0, 255, 0.33);
+}
+
+
+
