@@ -1,0 +1,88 @@
+CityRank,CityName,Country,Population,CityType,CityKM,DensityKM
+1,Chongqing,China,30165500,Municipality,82403,366
+2,Shanghai,China,24183300,Municipality,6340,3814
+3,Beijing,China,21707000,Municipality,16411,1267
+4,Istanbul,Turkey,15029231,Metropolitan Municipality,620,24231
+5,Karachi,Pakistan,14910352,City,3780,3944
+6,Dhaka,Bangladesh,14399000,City,337,42659
+7,Guangzhou,China,13081000,Sub-Provincial City,7434,1760
+8,Shenzhen,China,12528300,Sub-Provincial City,1992,6889
+9,Mumbai,India,12442373,City,438,28426
+10,Moscow,Russia,13200000,Federal City,2511,5256
+11,São Paulo,Brazil,12038000,Municipality,1081,11199
+12,Kinshasa,Democratic Republic of the Congo,11462000,City Province,473,24195
+13,Tianjin,China,11249000,Municipality,11920,944
+14,Lahore,Pakistan,11126000,Metropolitan Area,503,22139
+15,Delhi,India,11034555,Union Territory,462,23893
+16,Jakarta,indonesia,10624000,Special Capital Region,662,16060
+17,Dongguan,China,10615000,City,2460,4315
+18,Seoul,South Korea,9806000,Special City,605,16202
+19,Foshan,China,9279000,City,3797,2444
+20,Tokyo,Japan,9273000,Metropolis,626,14790
+21,Chengdu,China,9012000,Sub-Provincial City,14312,630
+22,Lima,Peru,8894000,City,2672,3329
+23,Mexico City,Mexico,8875000,Capital City,607,14616
+24,London,United Kingdom,8825000,Capital City,1572,5614
+25,Tehran,Iran,8694000,City,574,15143
+26,New York,United States,8622698,City,786,19066
+27,Bangalore,India,8443675,City,709,11909
+28,Shenyang,China,8106171,Sub-Provincial City,12980,625
+29,Wuhan,China,8035000,Sub-Provincial City,8494,946
+30,Bogotá,Columbia,7963000,Capital District,428,18594
+31,Cairo,Egypt,7601018,City,303,25582
+32,Ningbo,China,7605689,Sub-Provincial City,9816,775
+33,Ho Chi Minh City,Vietnam,7431000,City,454,16382
+34,Nanjing,China,7260000,Sub-Provincial City,6582,1103
+35,Hong Kong,China,7298600,Special Administrative Region,1104,6608
+36,Hanoi,Vietnam,7232700,Metropolitan Municipality-Province,3325,2176
+37,Changsha,China,7044118,City,11819,596
+38,Hangzhou,China,7035000,Sub-Provincial City,851,8268
+39,Ahmedabad,India,7021000,City,351,19991
+40,Hyderabad,India,6993262,City,652,11494
+41,Baghdad,Iraq,6793000,Metropolis,425,16001
+42,Chennai,India,6727000,Municipal Corporation,427,15772
+43,Riyadh,Saudi Arabia,6694000,City,411,16288
+44,Rio De Janeiro,Brazil,6520000,Municipality,751,8677
+45,Xi`an,China,6220000,Sub-Provincial City,10135,614
+46,Suzhou,China,5983000,City,8488,705
+47,Surat,India,5868000,City,210,27916
+48,Bangkok,Thailand,5782000,Special Administrative Area,765,7561
+49,Santiago,Chile,5561000,City,595,9339
+50,Singapore,Republic of Singapore,5607000,City-State,603,9302
+51,Shantoou,China,5391028,City,2064,2611
+52,Saint Petersburg,Russia,5351000,City,463,11554
+53,Harbin,China,5299000,Sub-Provincial City,614,8626
+54,Dar Es Salaam,Tanzania,5257000,City,331,15905
+55,Yangon,Myanmar,5214000,Metropolitan Municipality-Province,599,8708
+56,Johannesburg,South Africa,4949000,Metropolitan Municipality,433,11434
+57,Abidjan,Ivory Coast,4765000,Department/City District,2119,2249
+58,Alexandria,Egypt,4616625,Governorate,2300,2007
+59,Kolkata,India,4496694,India,185,24306
+60,Ankara,Turkey,4470800,Metropolitan Municipality-Province,1911,2340
+61,Rome Capital,Italy,4353738,Metropolitan City,5363,812
+62,Giza,Egypt,4239988,Governorate,289,14667
+63,Zhengzhou,China,4122087,Sub-Provincial City,1016,4059
+64,Los Angeles,United States,3976322,Municipality City,1214,3276
+65,New Taipei City,Taiwan,3954929,Special Municipality,2053,1927
+66,Cape Town,South Africa,3740026,Metropolitan Municipality,2445,1530
+67,Yokohama,Japan,3726167,Designated City,437,8517
+68,Berlin,Germany,3671000,City-State,892,4117
+69,Busan,South Korea,3590000,Metropolitan City,347,10331
+70,Xiamen,China,3531347,Sub-Provincial City,1699,2078
+71,Jeddah,Saudi Arabia,3456259,Saudi Arabia,1765,1958
+72,Durban,South Africa,3442361,Metropolitan Municipality,2291,1502
+73,Kabul,Afghanistan,3414100,Municipality City,275,12415
+74,Casablanca,Morocco,3359818,Prefecture,230,14608
+75,Hefei,China,3352076,City,839,3998
+76,Pyongyang,North korea,3255388,Direct-Controlled Municipality,2113,1541
+77,Madrid,Spain,3207247,Municipality City,606,5294
+78,Faisalabad,Pakistan,3202846,City District,214,14971
+79,Ekurhuleni,South Africa,3178470,Metropolitan Municipality,1975,1609
+80,Nairobi,Kenya,3138369,Capital District,695,4829
+81,Zhongshan,China,3121275,City,1784,1750
+82,Pune,India,3115431,Municipal Corporation,451,6913
+83,Addis Ababa,Ethopia,3103673,Metropolitan Municipality-Province,527,5889
+84,Jaipur,India,3073350,Municipal Corporation,485,6337
+85,Buenos Aires,Argentina,3054300,Federal District,203,15046
+86,Wenzhou,China,3039439,City,1188,2559
+87,Incheon,South Korea,3002645,Metropolitan City,329,9139
