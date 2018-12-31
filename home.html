@@ -10,7 +10,6 @@
         <script src="main.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+128" rel="stylesheet"> 
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -61,50 +60,43 @@
           <img src="images/js2.png" alt="JavaScript" height="auto" width="100" class="skillImg">
           <img src="images/jq.gif" alt="jQuery" height="100" width="100" class="skillImg">
           <img src="images/vscode.png" alt="VSCode" height="100" width="100" class="skillImg">
-          <img src="images/atom.png" alt="Atom" height="100" width="100" class="skillImg">
           <img src="images/bootstrap.png" alt="Bootstrap" height="100" width="100" class="skillImg">
           <img src="images/csharp.png" alt="CSharp" height="100" width="100" class="skillImg">
           <img src="images/dotnet.png" alt="DotNet" height="100" width="100" class="skillImg">
-          <img src="images/php.png" alt="PHP" height="100" width="100" class="skillImg">
           <img src="images/sql.png" alt="SQL" height="100" width="100" class="skillImg">
-          <img src="images/tableau.gif" alt="Tableau" height="100" width="100" class="skillImg">
-          <img src="images/mysql.png" alt="MySQL" height="100" width="100" class="skillImg">
           <img src="images/react-logo.png" alt="React" height="100" width="100" class="skillImg">
         </div>
 
         <h1>Portfolio</h1>
         <div class="box">
           <h2>JavaScript</h2>
-          <p>JavaScript is one of the most used languages in the world. Highly versatile as a pseudo-object
-            oriented programming (OOP) language, it integrates well with browsers and loves HTML and CSS, the code
-            languages that make up the content and style of a web page. 
-            <br><br>
-            JavaScript works well to calculate numbers and display information on dynamic web pages. Instead
-            of me telling you, take a look at a program I wrote that does just that. Click here to see my 
-            <a href="pages/birthday.html" target="new"><h4>Birthday/Age Calculator</h4></a>
-          
-            The Birthday/Age Calculator took more work than might meet the eye. For example, one might think 
-            that by simply subtracting dates from a current date we get a working program. Unfortunately if that 
-            was the case a person who was born on January 20, 2000, running the program on January 19, 2018, 
-            would be shown as 18 years, 0 months and -1 days old. To correct this issue I used a series of
-            if/else statements which exchange the equivalent amount of time (-1 year for +12 months) 
-            when necessary. I even coded it to determine the current month and created
-            if/else statements to trade the correct number of days for months containing 31, 30 and 28 days. Don't 
-            use it on February 29th on a leap year or your computer will explode.
+          <p>JavaScript is one of the most used languages in the world. It's highly versatile and it integrates 
+            well with browsers, HTML and CSS. JavaScript is my faorite language as a front-end developer. Below are some
+            of my JavaScript projects.
           </p>
           <br><br>
-          <p>Enough Games! We have work to do, and that is why you need someone like me to help you do it. Let's
-            take a look at another program I wrote that will help us with that. I call 
-            it...the To Do List, I've always prided myself on originality. Click here to see my
-            <a href="pages/toDoList.html" target="new"><h4>To Do List</h4></a>
-                 
+          <p>
+            <h4>Birthday/Age Calculator</h4>
+            This program prompts the user for a birth
+            year, month and day. It then uses JavaScript to take the current date, compare the difference and write it in the 
+            HTML. The program calculates for different days of corresponding months (31, 30 and 28) and does some math to 
+            display the output in a format that makes sense to the way we keep track of time (1 year and 2 months instead of 2 
+            years and -10 months).
+            <a href="pages/birthday.html" target="new"><h4>Birthday/Age Calculator</h4></a>
+          </p>
+          <br><br>
+          <p>
+            <h4>To Do List</h4>
             The To Do List uses home-made functions which make use of the built in methods of shift and push in
             JavaScript. I've created a variable which is an array that simply displays the list. The push method
             is used to add the item in the prompt to the array and the shift method removes the first item in the 
-            array.
+            array. There are event listeners that update the page once the user makes a change to the list.
+            <a href="pages/toDoList.html" target="new"><h4>To Do List</h4></a>
           </p>
           <br><br>
-          <p>I love the Office...not my current sales job, the TV show. I designed this soundboard to provide minutes of 
+          <p>
+            <h4>Office Soundboard</h4>
+            I love the Office...not my current sales job, the TV show. I designed this soundboard to provide minutes of 
             entertainment to any fellow fans of the show. Credit to Wes Bos; the format is similar to his first challenge
             on the 30 day JavaScript Challenge. Aside from the different formatting 
             and differed code, I designed mine to work with a keyboard button push or by clicking on the buttons, which Wes' 
@@ -113,25 +105,27 @@
           </p>
           <br><br>
           <p>
-            New Clock that I made based off of Wes Bos' Project, but this one was done a liitle differently:
+            <h4>JavaScript & CSS Clock</h4>
+            This is one of my favorite apps I've made. I love watches and wrote this in CSS and use JavaScript to make it a 
+            functional clock.
             <a href="pages/clock.html" target="new"><h4>JavaScript & CSS Clock</h4></a>
           </p>
           <br><br>
           <p>
-            Looking to get more experience with JavaScript objects, I sought out a project where I could use an array of 
-            objects and return corresponding data in response to user prompts. I’m a huge history nerd, so a presidential 
-            database with terms and names seemed fitting. Take a look. Just plug in a number (obviously between 1 and 45) 
-            and you’ll get some info on that president:
+            <h4>Presidents of the United States of America</h4>
+            This app uses a list of JavaScript objects with informations about the presidents. The user can enter a number which 
+            retrieves the corresponding president's information and displays it in the HTML.
             <a href="pages/presidents.html" target="new"><h4>Presidents of the United States of America</h4></a>
           </p>
           <br><br>
-            Animations can really set your website apart from the others. jQuery is the most widely used JavaScript
-            library and is great for animations amongst other things. JavaScript libraries are sections of prewritten
-            code that can be called with simplified commands. John Resig created jQuery in 2006 and it is still heavily
-            used today. If you like the fade-in effect on this page you will be a fan of jQuery.
-            Here's another look at some code that I put together to demonstrate jQuery's abilities:
+          <p>
+            <h4>jQuery Animation Example</h4>
+            Animations can really set your website apart from the others. jQuery uses a premade library to allow shorthand 
+            access to complex code sets. The fade-in effect on this page is made by using jQuery. This example is from 
+            a previous version of my page and hides elements, exposing them when a user clicks a button. The page also scrolls
+            to the clicked item.
             <a href="pages/jQuery.html" target="new"><h4>jQuery Animation Example</h4></a>
-          
+          </p>
         </div>
         
         <div class="box">
@@ -227,7 +221,4 @@
       
     </body>
 
-    <footer>
-      <div id="code">I Love you Liana!</div>
-    </footer>
 </html>
