@@ -13,7 +13,7 @@ body {
   background-image: url(images/floor.jpg);
   background-repeat: no-repeat;
   background-position: center; 
-  background-size: 100%;
+  background-size: cover;
   background-attachment: fixed;
   margin: 0;
   padding: 0;
