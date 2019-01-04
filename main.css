@@ -53,6 +53,8 @@ nav ul {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+
+
 /*============================================================
 home
 ============================================================*/
@@ -64,7 +66,7 @@ home
   justify-content: center;
   flex-wrap: nowrap;
   align-items: center;
-  color: white;
+  color: whitesmoke;
 }
 
 #homeContainer h1 {
@@ -76,7 +78,8 @@ home
 }
 
 #welcomeBox {
-  font-size: 15px;
+  margin-top: 5%;
+  font-size: 25px;
   font-family: 'Rock Salt', cursive;
 }
 
@@ -96,7 +99,7 @@ span {
   justify-content: center;
   margin-bottom: 5%;
   padding: 5%;
-  color: white;
+  color: whitesmoke;
   opacity:0;/*changes with the jQuery code*/
 }
 
@@ -110,6 +113,12 @@ span {
 
 .skillImg {
   margin: 2%;
+}
+
+@media (max-width: 600px) {
+  #welcomeBox {
+    font-size: 10px;
+  }
 }
 
 
@@ -175,7 +184,7 @@ contact
   margin: 2%;
 }
 
-#contactMeForm h2 {
+#contactMeForm label {
   color: whitesmoke;
 }
 
@@ -197,9 +206,9 @@ input[type=submit] {
   transition: all 0.5s;
   cursor: pointer;
   margin: 15px;
-  font-size: 35px;
+  font-size: 25px;
 }
-/*chage the color of the send button on hover*/
+
 input[type=submit]:hover {
   color: black;
   background-color: #f8f8ff;
@@ -208,6 +217,10 @@ input[type=submit]:hover {
 @media (max-width: 600px) {
   #callMeEmailMe {
     font-size: 10px;
+  }
+
+  #contactMeForm {
+    width: 90%;
   }
 
 }
