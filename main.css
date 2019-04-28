@@ -29,7 +29,7 @@ nav li {
   display: flex;
   justify-content: center;
   float: left;
-  width: 16.667%;
+  width: 12.5%;
 }
 
 nav li a {
@@ -79,8 +79,8 @@ home
 
 #welcomeBox {
   margin-top: 5%;
-  font-size: 25px;
-  font-family: 'Rock Salt', cursive;
+  font-size: 15px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .reallySmall {
@@ -88,12 +88,9 @@ home
   font-size: 15px;
 }
 
-span {
-  color: red;
-}
-
 .box {
   border: 2px solid black;
+  border-radius: 15%;
   background-color: rgba(8, 8, 8, 0.616);
   width: 75%;
   justify-content: center;
@@ -101,6 +98,12 @@ span {
   padding: 5%;
   color: whitesmoke;
   opacity:0;/*changes with the jQuery code*/
+}
+
+.box:hover {
+  background-color: orange;
+  width: 78%;
+
 }
 
 #boxLogo {
