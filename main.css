@@ -90,7 +90,7 @@ home
 
 .box {
   border: 2px solid black;
-  border-radius: 15%;
+  border-radius: 4%;
   background-color: rgba(8, 8, 8, 0.616);
   width: 75%;
   justify-content: center;
@@ -171,11 +171,11 @@ contact
 }
 
 #callMeEmailMe {
-  font-size:25px;
   align-items: center;
   justify-content: center;
   color: whitesmoke;
   font-family: 'Rock Salt', cursive;
+  font-size:25px;
 }
 
 #contactMeForm {
@@ -187,43 +187,53 @@ contact
   margin: 2%;
 }
 
+.formItem {
+  margin: 40px 0;
+}
+
 #contactMeForm label {
   color: whitesmoke;
+  display: block;
+  padding-bottom: 4px;
+  font-family: 'Rock Salt', cursive;
+  font-size:25px;
 }
 
-input[type=text], select, textarea {
+input, select, textarea {
   width: 95%;
   height: 5%;
-  padding: 5px;
+  padding: 8px;
   border: 3px solid #ccc;
+  box-sizing: border-box;
   border-radius: 4px;
-  margin-top: 6%; /*inline style for the text box, wont work in CSS for some reason*/
-  font-size: 25px; /*does not apply to textarea*/
+  margin-top: 6%;
+  font-size: 25px; 
 }
 
-input[type=submit] {
+#contactMeForm button {
   background-color: #333;
   color: whitesmoke;
   border: 2px solid black;
   width: 33%;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 15px;
+  display: block;
+  margin: auto;
   font-size: 25px;
+  font-family: 'Rock Salt', cursive;
+  font-size:25px;
 }
 
-input[type=submit]:hover {
-  color: black;
-  background-color: #f8f8ff;
+#contactMeForm button:hover {
+  color: #333;
+  background-color: whitesmoke;
 }
 
 @media (max-width: 600px) {
   #callMeEmailMe {
     font-size: 10px;
   }
-
   #contactMeForm {
     width: 90%;
   }
-
 }
