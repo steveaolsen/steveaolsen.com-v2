@@ -35,4 +35,3 @@ if($_POST) {
   echo '<p>Something went wrong</p>';
 }
  
-?>
