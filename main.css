@@ -18,10 +18,28 @@ body {
   padding: 0;
 }
 
+@media (max-width: 600px) {
+  body {
+    background-image: url(images/pattern.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 nav {
   position: fixed;
   border: 2px solid black;
   width: 100%;
+}
+
+@media (max-width: 600px) {
+  nav {
+    position: absolute;
+  }
 }
 
 nav li {
@@ -29,6 +47,15 @@ nav li {
   justify-content: center;
   float: left;
   width: 16.66%;
+}
+
+@media (max-width: 600px) {
+  nav li {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+  }
 }
 
 nav li a {
@@ -39,6 +66,13 @@ nav li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  nav li a {
+    width: 50%;
+    text-align: left;
+  }
 }
 
 nav li a:hover {
@@ -69,8 +103,15 @@ home
   color: whitesmoke;
 }
 
-#homeContainer h1 {
+@media (max-width: 600px) {
+  #homeContainer {
+    margin-top: 100%;
+  }
+}
+
+#nameTitle {
   font-family: 'Rock Salt', cursive;
+  font-size: 33px;
 }
 
 .reallySmall {
@@ -87,10 +128,16 @@ home
   height: 500px;
   margin-bottom: 5%;
   justify-content: center;
-  color: whitesmoke;
   opacity:0;/*changes with the jQuery code*/
   text-align: center;
   font-family: 'Ubuntu Mono', monospace;
+}
+
+@media (max-width: 600px) {
+  .box {
+    width: 350px;
+    height: 350px;
+  }
 }
 
 #welcomeBox {
@@ -232,6 +279,35 @@ home
   color:black;
 }
 
+#cSharpBox {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#cSharpLogos {
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8%;
+}
+
+#cSharpLogo {
+  height: 65%;
+  width: auto;
+  margin: 5% 10%;
+}
+
+#dotnetLogo {
+  height: 66%;
+  width: auto;
+  margin: 5% 2%;
+}
+
+#cSharpBox a {
+  color: whitesmoke;
+}
+
 #bootstrapJQueryBox {
   background-color: rgba(245, 245, 245, .5);
 }
@@ -270,13 +346,6 @@ home
   font-size: 25px;
 }
 
-@media (max-width: 600px) {
-  #welcomeBox {
-    font-size: 10px;
-  }
-}
-
-
 /*============================================================
 resources
 ============================================================*/
@@ -289,6 +358,12 @@ resources
   flex-wrap: nowrap;
   align-items: center;
   color: white;
+}
+
+@media (max-width: 600px) {
+  #resourcesContainer {
+    margin-top: 100%;
+  }
 }
 
 .resourcesBox {
@@ -322,12 +397,24 @@ contact
   align-items: center;
 }
 
+@media (max-width: 600px) {
+  #contactContainer {
+    margin-top: 100%;
+  }
+}
+
 #callMeEmailMe {
   align-items: center;
   justify-content: center;
   color: whitesmoke;
   font-family: 'Rock Salt', cursive;
   font-size:25px;
+}
+
+@media (max-width: 600px) {
+  #callMeEmailMe {
+    color: black;
+  }
 }
 
 #contactMeForm {
