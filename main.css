@@ -131,6 +131,7 @@ home
   opacity:0;/*changes with the jQuery code*/
   text-align: center;
   font-family: 'Ubuntu Mono', monospace;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6), 0 12px 32px 0 rgba(0, 0, 0, 0.4);
 }
 
 @media (max-width: 600px) {
