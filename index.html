@@ -2,21 +2,14 @@
 
 <html>
     <head>
-        
-
         <title>Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="main.css" media="screen" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script src="main.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet"> 
-
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet"> 
     </head>
 
     <header>
@@ -39,7 +32,7 @@
         
         <p class="reallySmall">Welcome to</p>
         <h1>SteveAOlsen.com</h1>
-        <br>
+        
         <p class="reallySmall">Please scroll down...</p>
        
         <div class="box" id="welcomeBox">
@@ -95,41 +88,60 @@
             <img src="images/WordPress.png" alt="WordPress" id="wpLogo">
           </div>
           <br>
-          <a href="https://steveaolsen.wordpress.com/" target="new">WordPress Site</a>
-          <br>
           <a href="https://steveaolsen.wixsite.com/home" target="new">Wix Site</a>
           <br>
           <a href="https://steveaolsen.wixsite.com/home/cities-app" target="new">Cities App</a>
+          <br>
+          <a href="https://steveaolsen.wordpress.com/" target="new">WordPress Site</a>
+        </div>
+
+        <div class="box" id="serverBox">
+          <div id="serverLogos">
+            <div id="topServerLogos">
+              <img src="images/aws.png" alt="aws" id="awsLogo">
+              <img src="images/ubuntu.png" alt="ubuntu" id="ubuntuLogo">
+            </div>
+            <div id="bottomServerLogos">
+              <img src="images/node.png" alt="node" id="nodeLogo">
+              <img src="images/nginx.png" alt="nginx" id="nginxLogo">
+            </div>
+          </div>
+        </div>
+        
+        <div class="box" id="dataBox">
+            <div id="dataLogos">
+                <img src="images/sql.png" alt="SQL" id="sqlLogo">
+                <img src="images/tableau.png" alt="tableau" id="tableauLogo">
+            </div>
+            <a href="docs/zombieSQL.txt" target="new">Zombie Report SQL Code</a>
+            <br>
+            <a href="docs/CityListSQL.txt" target="new">Top Cities SQL Code</a>
+            <br>
+            <a href="docs/CityList.csv" target="new">Top Cities CSV</a>
+        </div>
+
+        <div class="box" id="bootstrapJQueryBox">
+          <div id="bootstrapJQueryLogos">
+              <img src="images/bootstrap.png" alt="bootstrap" id="bootstrapLogo">
+              <img src="images/jq.gif" alt="jquery" id="jQueryLogo">
+          </div>
+          <a href="pages/bootstrap.html" target="new">Bootstrap/jQuery Example</a> 
+          <br>
+          <a href="pages/nameThing/index.html" target="new">Bootstrap Modal Window</a> 
         </div>
 
 
-        <!--
-        <div class="box">
-          <h2>SQL</h2>
-          <br>
-          <p>
-            Here is a link to
-            some SQL queries I wrote in MySQL for a Zombie Status Report. The database includes
-            two tables which are modified, joined and more. 
-            <br>
-            <a href="docs/zombieSQL.txt" target="new"><h4>Zombie Report SQL Code</h4></a>
-          </p>
-          <br>
-          <p>
-            I love data. My best friend and I used to Wikipedia lists of top-100's. We'd search for lists of the largest airports
-            in the world, or the largest countries by surface area. One of my favorites was largest cities in the world by population. 
-            So I created a database in MySQL and a table inside containing the top cities in the world by population. Check out my SQL 
-            code below to see exactly how I did it. Check out the CSV file below to see what I created with this code.
-            <br>
-            <a href="docs/CityListSQL.txt" target="new"><h4>Top Cities by Population SQL Code</h4></a>
-            <br>
-            <a href="docs/CityList.csv" target="new"><h4>Top Cities by Population CSV File</h4></a>
-          </p>
-        </div>
 
 
 
 
+<!--
+
+
+
+
+
+   
         <div class="box">
           <h2>PHP</h2>
           <br>
@@ -143,35 +155,6 @@
             <a href="pages/contact.html" target="new"><h4>Contact Me Page</h4></a>
           </p>
         </div>
-
-
-
-
-
-        <div class="box">
-          <h2>Bootstrap</h2>
-          <br>
-          <p>
-            A simple Bootstrap page I've
-            created. Try this link on different devices and watch how Bootstrap
-            re-formats the content. 
-            <br>
-            <a href="pages/bootstrap.html" target="new"><h4>Bootstrap Framework</h4></a> 
-            <br>
-            Here's a fun bootstrap project. The project uses HTML, CSS, JavaScript and 
-            Bootstrap to prompt a user for thier name in a modal window, then greet them accordingly. The JavaScript checks
-            for errors such as an empty submission, or a name containing numbers, and gives the user an error message if either
-            is detected.
-            <br>
-            <a href="pages/nameThing/index.html" target="new"><h4>Bootstrap Modal Window</h4></a> 
-          </p>
-        </div>
-
-
-
-
-
-
 
         <div class="box">
           <h2>C# & .NET</h2>

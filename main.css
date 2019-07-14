@@ -3,7 +3,6 @@ GLOBALS
 ============================================================*/
 
 html {
-  font-family: 'Ubuntu', sans-serif;
   background-color: white;
   margin: 0;
   padding: 0;
@@ -74,13 +73,24 @@ home
   font-family: 'Rock Salt', cursive;
 }
 
-#homeContainer h2 {
-  font-family: 'Rock Salt', cursive;
-}
-
 .reallySmall {
   font-family: 'Rock Salt', cursive;
   font-size: 15px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid black;
+  border-radius: 100%;
+  width: 500px;
+  height: 500px;
+  margin-bottom: 5%;
+  justify-content: center;
+  color: whitesmoke;
+  opacity:0;/*changes with the jQuery code*/
+  text-align: center;
+  font-family: 'Ubuntu Mono', monospace;
 }
 
 #welcomeBox {
@@ -93,41 +103,6 @@ home
   background-color: rgba(245, 245, 245, .5);
 }
 
-#jsBox {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-#cmsBox {
-  background-color: rgba(245, 245, 245, .5);
-}
-
-
-
-
-.box {
-  display: flex;
-  flex-direction: column;
-  border: 5px solid black;
-  border-radius: 100%;
-  /*background-color: rgba(8, 8, 8, 0.616);*/
-  width: 500px;
-  height: 500px;
-  margin-bottom: 5%;
-  justify-content: center;
-  color: whitesmoke;
-  opacity:0;/*changes with the jQuery code*/
-  text-align: center;
-}
-
-.box p {
-  margin: 45% auto;
-  width: 50%;
-}
-
-.box a {
-  font-size: 25px;
-}
-
 #reactLogo {
   display: block;
   height: 50%;
@@ -135,11 +110,27 @@ home
   margin: 5% auto;
 }
 
+#reactBox a {
+  color: black;
+}
+
+#jsBox {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 #jsLogo {
   display: block;
   height: 33%;
   width: 33%;
   margin: 5% auto;
+}
+
+#jsBox a {
+  color:whitesmoke;
+}
+
+#cmsBox {
+  background-color: rgba(245, 245, 245, .5);
 }
 
 #cmsLogos {
@@ -162,6 +153,122 @@ home
   margin: 5% 2%;
 }
 
+#cmsBox a {
+  color: black;
+}
+
+#serverBox {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#serverLogos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end
+}
+
+#topServerLogos {
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+#awsLogo {
+  width: 33%;
+  height: auto;
+}
+
+#ubuntuLogo {
+  width: 33%;
+  height: auto;
+}
+
+#bottomServerLogos {
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+#nodeLogo {
+  width: 33%;
+  height: auto;
+}
+
+#nginxLogo {
+  width: 33%;
+  height: auto;
+}
+
+#dataBox {
+  background-color: rgba(245, 245, 245, .5);
+}
+
+#dataLogos {
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  align-items: center;
+  margin-bottom: 20%;
+}
+
+#sqlLogo {
+  height: 100%;
+  width: auto;
+  margin: 0% 2%;
+}
+
+#tableauLogo {
+  height: 100%;
+  width: auto;
+  margin: 0% 2%;
+}
+
+#dataBox a {
+  color:black;
+}
+
+#bootstrapJQueryBox {
+  background-color: rgba(245, 245, 245, .5);
+}
+
+#bootstrapJQueryLogos {
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8%;
+}
+
+#bootstrapLogo {
+  height: 65%;
+  width: auto;
+  margin: 5% 10%;
+}
+
+#jQueryLogo {
+  height: 66%;
+  width: auto;
+  margin: 5% 2%;
+}
+
+#bootstrapJQueryBox a {
+  color: black;
+}
+
+.box p {
+  margin: 45% auto;
+  width: 50%;
+}
+
+.box a {
+  font-size: 25px;
+}
 
 @media (max-width: 600px) {
   #welcomeBox {
