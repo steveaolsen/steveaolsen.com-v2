@@ -15,20 +15,10 @@
       margin: 25px;
     }
 
-    #indexTitle {
-      display: flex;
-      font-size: 25px;
-      align-items: center;
-      justify-content: center;
-      padding: 5%;
-    }
-
     #indexContainer {
       display: flex;
       flex-direction: column;
     }
-
-    /*index buttons*/
 
     #show1 {
       display: flex;
@@ -168,8 +158,6 @@
       right: 0;
     }
 
-    /*first box*/
-
     #index1Box {
       align-self: center;
       color: black;
@@ -180,40 +168,6 @@
       border: 2px solid black;
       padding: 20px 12px;
     }
-
-    #index1List {
-      background-color: rgba(227, 227, 227, 0.65);
-    }
-
-    #logoBox {
-      display: flex;
-      background-color: white;
-      justify-content: space-around;
-      align-items: center;
-      margin-bottom: 12px;
-    }
-
-    #htmlCSSLogo img {
-      height: 80px;
-      width: 100px;
-    }
-
-    #jsLogo img {
-      height: 70px;
-      width: 70px;
-    }
-
-    #jqLogo img {
-      height: 70px;
-      width: 70px;
-    }
-
-    #cSharpLogo img {
-      height: 70px;
-      width: 70px;
-    }
-
-    /*second box*/
 
     #index2Box {
       display: flex;
@@ -228,12 +182,6 @@
       color: white;
     }
 
-    #index2List {
-      background-color: rgba(0, 0, 0, 0.25)
-    }
-
-    /*third box*/
-
     #index3Box {
       display: flex;
       flex-direction: column;
@@ -245,18 +193,6 @@
       border: 2px solid black;
       padding: 20px 10px 10px 10px;
       color: white;
-    }
-
-    #index3Box img {
-      align-self: center;
-      border: 2px solid black;
-      height: 95%;
-      width: 95%;
-    }
-
-    #Index3Box p {
-      align-self: center;
-      background-color: rgba(0, 147, 255, 0.51);
     }
   
   </style>
@@ -300,11 +236,6 @@
   
 </head>
 
-<header>
-  <nav>
-    
-  </nav>
-</header>
 
 <body>
     
@@ -321,48 +252,19 @@
 
 
   <div id="indexContainer">
-    <div id="show1" onmousedown="autoScrollTo('indexLeftBox');"> <span>Development</span> </div>
+    <div id="show1" onmousedown="autoScrollTo('indexLeftBox');"> <span>Item 1</span> </div>
     <div id="index1Box">
-      <div id="index1List">
-        <ul>
-          <h2>
-          <li>HTML & CSS</li>
-          <li>JavaScript</li>
-		      <li>jQuery</li>
-          <li>C#</li>
-        </h2>
-        </ul>
-        <div id="logoBox">
-          <div id="htmlCSSLogo"> <img src="../images/htmlcss.svg"> </div>
-          <div id="jsLogo"> <img src="../images/js.png"> </div>
-          <div id="jqLogo"> <img src="../images/jq.gif"> </div>
-          <div id="cSharpLogo"> <img src="../images/cSharp.jif"> </div>
-        </div>
-      </div>
     </div>
 
-    <div id="show2" onmousedown="autoScrollTo('indexMiddleBox');"> <span>Marketing</span> </div>
+    <div id="show2" onmousedown="autoScrollTo('indexMiddleBox');"> <span>Item 2</span> </div>
     <div id="index2Box">
-      <div id="index2List">
-        <ul>
-          <h2>
-          <li>Email Marketing / Direct Marketing</li>
-          <li>SalesForce Management & Development</li>
-          <li>Desktop & Print Publishing</li>
-          <li>Hustle</li>
-        </h2>
-        </ul>
-      </div>
     </div>
 
-    <div id="show3" onmousedown="autoScrollTo('sigPic');"> <span>Personality</span> </div>
+    <div id="show3" onmousedown="autoScrollTo('sigPic');"> <span>Item 3</span> </div>
     <div id="index3Box">
     </div>
   </div>
-  </body>
-    <footer>
 
-
-    </footer>
+</body>
 
 </html>

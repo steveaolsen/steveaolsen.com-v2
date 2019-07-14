@@ -29,10 +29,11 @@ nav li {
   display: flex;
   justify-content: center;
   float: left;
-  width: 12.5%;
+  width: 16.66%;
 }
 
 nav li a {
+  font-family: 'Rock Salt', cursive;
   display: block;
   color: whitesmoke;
   width: 144%;
@@ -77,46 +78,90 @@ home
   font-family: 'Rock Salt', cursive;
 }
 
-#welcomeBox {
-  margin-top: 5%;
-  font-size: 15px;
-  font-family: 'Ubuntu', sans-serif;
-}
-
 .reallySmall {
   font-family: 'Rock Salt', cursive;
   font-size: 15px;
 }
 
+#welcomeBox {
+  margin-top: 5%;
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#reactBox {
+  background-color: rgba(245, 245, 245, .5);
+}
+
+#jsBox {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#cmsBox {
+  background-color: rgba(245, 245, 245, .5);
+}
+
+
+
+
 .box {
-  border: 2px solid black;
-  border-radius: 4%;
-  background-color: rgba(8, 8, 8, 0.616);
-  width: 75%;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border: 5px solid black;
+  border-radius: 100%;
+  /*background-color: rgba(8, 8, 8, 0.616);*/
+  width: 500px;
+  height: 500px;
   margin-bottom: 5%;
-  padding: 5%;
+  justify-content: center;
   color: whitesmoke;
   opacity:0;/*changes with the jQuery code*/
+  text-align: center;
 }
 
-.box:hover {
-  background-color: orange;
-  width: 78%;
-
+.box p {
+  margin: 45% auto;
+  width: 50%;
 }
 
-#boxLogo {
-  width: 75%;
+.box a {
+  font-size: 25px;
+}
+
+#reactLogo {
+  display: block;
+  height: 50%;
+  width: 50%;
+  margin: 5% auto;
+}
+
+#jsLogo {
+  display: block;
+  height: 33%;
+  width: 33%;
+  margin: 5% auto;
+}
+
+#cmsLogos {
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  align-items: center;
   justify-content: center;
-  margin-bottom: 5%;
-  padding: 2%;
-  background-color: rgba(255, 255, 255, 0.349);
 }
 
-.skillImg {
-  margin: 2%;
+#wixLogo {
+  height: 65%;
+  width: auto;
+  margin: 5% 10%;
 }
+
+#wpLogo {
+  height: 100%;
+  width: auto;
+  margin: 5% 2%;
+}
+
 
 @media (max-width: 600px) {
   #welcomeBox {
