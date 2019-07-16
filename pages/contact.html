@@ -43,18 +43,18 @@
     </div>
 
     <div id="contactMeForm">
-      <form method="post" action="send_form_email.php">
+      <form action="https://formspree.io/steveaolsen@gmail.com" method="POST">
         <div class="formItem">
           <label for="name">Name*</label>
-          <input type="text" id="name" name="visitor_name" pattern={2,} required>
+          <input type="text" id="name" name="name" placeholder="Your Name" pattern={2,} required>
         </div>
         <div class="formItem">
           <label for="email">Email*</label>
-          <input type="email" id="email" name="visitor_email" required>
+          <input type="email" id ="email" name="email" placeholder="Your Email" required>
         </div>
         <div class="formItem">
           <label for="message">Message*</label>
-          <textarea id="message" name="visitor_message" required></textarea>
+          <textarea name="message" id="message" placeholder="Your Message" required></textarea>
         </div>
         <div class="formItem">
           <button type="submit">Send</button>
@@ -68,3 +68,6 @@
 
 
 </html>
+
+ 
+
