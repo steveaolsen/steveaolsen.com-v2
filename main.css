@@ -36,12 +36,6 @@ nav {
   width: 100%;
 }
 
-@media (max-width: 600px) {
-  nav {
-    position: absolute;
-  }
-}
-
 nav li {
   display: flex;
   justify-content: center;
@@ -54,7 +48,7 @@ nav li {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
-    width: 100%;
+    width: 33.33%;
   }
 }
 
@@ -70,7 +64,7 @@ nav li a {
 
 @media (max-width: 600px) {
   nav li a {
-    width: 50%;
+    width: 100%;
     text-align: left;
   }
 }
@@ -105,7 +99,7 @@ home
 
 @media (max-width: 600px) {
   #homeContainer {
-    margin-top: 100%;
+    margin-top: 15%;
   }
 }
 
@@ -117,6 +111,12 @@ home
 .reallySmall {
   font-family: 'Rock Salt', cursive;
   font-size: 15px;
+}
+
+@media (max-width: 600px) {
+  #nameTitle, .reallySmall {
+    color: black;
+  }
 }
 
 .box {
@@ -141,6 +141,15 @@ home
   }
 }
 
+.box p {
+  margin: 45% auto;
+  width: 50%;
+}
+
+.box a {
+  font-size: 25px;
+}
+
 #welcomeBox {
   margin-top: 5%;
   font-size: 15px;
@@ -162,6 +171,12 @@ home
   color: black;
 }
 
+@media (max-width: 600px) {
+  #reactBox a {
+    font-size: 20px;
+  }
+}
+
 #jsBox {
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -175,6 +190,12 @@ home
 
 #jsBox a {
   color:whitesmoke;
+}
+
+@media (max-width: 600px) {
+  #jsBox a {
+    font-size: 17px;
+  }
 }
 
 #cmsBox {
@@ -203,6 +224,12 @@ home
 
 #cmsBox a {
   color: black;
+}
+
+@media (max-width: 600px) {
+  #cmsBox a {
+    font-size: 20px;
+  }
 }
 
 #serverBox {
@@ -280,6 +307,12 @@ home
   color:black;
 }
 
+@media (max-width: 600px) {
+  #dataBox a {
+    font-size: 20px;
+  }
+}
+
 #cSharpBox {
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -307,6 +340,12 @@ home
 
 #cSharpBox a {
   color: whitesmoke;
+}
+
+@media (max-width: 600px) {
+  #cSharpBox a {
+    font-size: 20px;
+  }
 }
 
 #bootstrapJQueryBox {
@@ -338,13 +377,10 @@ home
   color: black;
 }
 
-.box p {
-  margin: 45% auto;
-  width: 50%;
-}
-
-.box a {
-  font-size: 25px;
+@media (max-width: 600px) {
+  #bootstrapJQueryBox a {
+    font-size: 20px;
+  }
 }
 
 /*============================================================
@@ -363,7 +399,7 @@ resources
 
 @media (max-width: 600px) {
   #resourcesContainer {
-    margin-top: 100%;
+    margin-top: 15%;
   }
 }
 
@@ -400,7 +436,7 @@ contact
 
 @media (max-width: 600px) {
   #contactContainer {
-    margin-top: 100%;
+    margin-top: 15%;
   }
 }
 
@@ -410,11 +446,20 @@ contact
   color: whitesmoke;
   font-family: 'Rock Salt', cursive;
   font-size:25px;
+  font-weight: 900;
+}
+
+#callMeEmailMe p {
+  text-align: center;
 }
 
 @media (max-width: 600px) {
   #callMeEmailMe {
     color: black;
+  }
+
+  #callMeEmailMe p {
+    font-size: 18px;
   }
 }
 
@@ -425,6 +470,12 @@ contact
   justify-content: center;
   padding: 2%;
   margin: 2%;
+}
+
+@media (max-width: 600px) {
+  #contactMeForm {
+    width: 90%;
+  }
 }
 
 .formItem {
@@ -469,11 +520,4 @@ input, select, textarea {
   background-color: whitesmoke;
 }
 
-@media (max-width: 600px) {
-  #callMeEmailMe {
-    font-size: 10px;
-  }
-  #contactMeForm {
-    width: 90%;
-  }
-}
+
