@@ -383,6 +383,38 @@ home
   }
 }
 
+#iframeDictionary {
+  width: 1000px;
+  height: 500px;
+  border: 5px solid black;
+  border-radius: 25px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6), 0 12px 32px 0 rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  margin-bottom: 15%;
+}
+
+#dictionaryApp {
+  width: 1000px;
+  height: 500px;
+  overflow: hidden;
+}
+
+#iframeCrypto {
+  width: 1000px;
+  height: 500px;
+  border: 5px solid black;
+  border-radius: 25px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6), 0 12px 32px 0 rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  margin-bottom: 15%;
+}
+
+#cryptoApp {
+  width: 1000px;
+  height: 500px;
+  overflow: hidden;
+}
+
 /*============================================================
 resources
 ============================================================*/
