@@ -402,6 +402,7 @@ home
 @media (max-width: 600px) {
   #iframeCrypto {
     width: 350px;
+    border: none;
   }
 
   #cryptoApp {
@@ -429,6 +430,7 @@ home
 @media (max-width: 600px) {
   #iframeDictionary {
     width: 350px;
+    border: none;
   }
 
   #dictionaryApp {
