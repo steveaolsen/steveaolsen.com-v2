@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>boom!</title>
+        <link rel="stylesheet" type="text/css" href="x.css">
+        <script src="x.js"></script> 
+    </head>
+    
+    <body>
+
+        <div id="container">
+            <img src="map.jpg" alt="world map" id="map" onclick="getCoords(event)">
+            
+            <div id="controls">
+                <p id="p">x: y:</p>
+                <p id="bombSelected">pick a bomb to arm</p>
+                <p id="message">message: </p>
+        
+                <p>select a bomb</p>
+                <div id="bomb1" class="bombs" onclick="arm(1)">city smasher</div>
+                <div id="bomb2" class="bombs" onclick="arm(2)">country crusher</div>
+                <div id="bomb3" class="bombs" onclick="arm(3)">continent destroyer</div>
+                <div id="bomb4" class="bombs" onclick="arm(4)">planet paralyzer</div>
+                <img src="jet.png" alt="stealth bomber" id="jet">
+            </div>
+        </div>
+
+    </body>
+</html> 
