@@ -198,6 +198,24 @@ home
   }
 }
 
+#animationBox {
+  background-color: rgba(245, 245, 245, .5);
+}
+
+#apiBox {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#apiBox a {
+  color:whitesmoke;
+}
+
+@media (max-width: 600px) {
+  #apiBox a {
+    font-size: 17px;
+  }
+}
+
 #cmsBox {
   background-color: rgba(245, 245, 245, .5);
 }
@@ -380,62 +398,6 @@ home
 @media (max-width: 600px) {
   #bootstrapJQueryBox a {
     font-size: 20px;
-  }
-}
-
-#iframeCrypto {
-  width: 1000px;
-  height: 500px;
-  border: 5px solid black;
-  border-radius: 25px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6), 0 12px 32px 0 rgba(0, 0, 0, 0.4);
-  overflow: hidden;
-  margin-bottom: 5%;
-}
-
-#cryptoApp {
-  width: 1000px;
-  height: 500px;
-  overflow: hidden;
-}
-
-@media (max-width: 600px) {
-  #iframeCrypto {
-    width: 350px;
-    border: none;
-  }
-
-  #cryptoApp {
-    width: 350px;
-    font-size: 8px;
-  }
-}
-
-#iframeDictionary {
-  width: 1000px;
-  height: 500px;
-  border: 5px solid black;
-  border-radius: 25px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6), 0 12px 32px 0 rgba(0, 0, 0, 0.4);
-  overflow: hidden;
-  margin-bottom: 5%;
-}
-
-#dictionaryApp {
-  width: 1000px;
-  height: 500px;
-  overflow: hidden;
-}
-
-@media (max-width: 600px) {
-  #iframeDictionary {
-    width: 350px;
-    border: none;
-  }
-
-  #dictionaryApp {
-    width: 350px;
-    font-size: 8px;
   }
 }
 
