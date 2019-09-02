@@ -199,11 +199,31 @@ home
 }
 
 #animationBox {
-  background-color: rgba(245, 245, 245, .5);
+  background-image: url(images/animation.gif);
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#animationBox a {
+  color: black;
+}
+
+#animationBox h1 {
+  color: black;
+  margin-bottom: 20%;
 }
 
 #apiBox {
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+#apiLogo {
+  display: block;
+  height: 44%;
+  width: 67%;
+  margin: 5% auto;
 }
 
 #apiBox a {
